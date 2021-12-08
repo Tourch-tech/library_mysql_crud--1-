@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+body {
+    background-image: url('../image/bg.jpg');
+    background-size: 100%;
+}
+
+.navbar {
+padding: .8rem;
+color: red;
+}
+.navbar-nav{
+padding-right: 20px;
+color: red;
+}
+.nav-link{
+font-size: 1.6em !important;
+color: red;
+font-weight: bold
+}
+.nav-item{
+    text-decoration: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 1300px;
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:  white;
+}
+
+th {
+    font-weight: bold;
+    color: black;
+}
+
+.func {
+    color: blue;
+}

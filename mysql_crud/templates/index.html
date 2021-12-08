@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/attendant.css')}}">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark nav-item nav-link">
+    <div class="container-fluid">
+        <img src="../static/image/Picture1.png" width="300px" height="100px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item act">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<br><br>
+
+<div class="container">
+    <h1>Welcome to lincoln library</h1><br>
+    <h2>Attendant only</h2>
+    <br><br>
+    <div>
+
+        <a href="/home">
+            <button type="button" class="btn" data-bs-toggle="modal">
+                PROCEED
+            </button>
+        </a>
+
+
+
+    </div>
+</div>
+        
+</body>
+</html>
