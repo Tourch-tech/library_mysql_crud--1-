@@ -38,6 +38,12 @@ h2 {
     font-size: 40px;
 }
 
+h3 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+
 input[type="text"], select {
     width: 100%;
     padding: 12px;

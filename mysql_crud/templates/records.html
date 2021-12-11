@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/indexx.css')}}">
 </head>
 <body>
  
@@ -30,7 +30,6 @@
     </div>
 </nav>
 
-<form action="/records"></form>
 <table>
     <tr>
         <th>Name</th>
@@ -41,21 +40,21 @@
 
     </tr>
 
-    {% for users in user %}
+    {% for user in users %}
     <tr>
-    <td>{{users.name}}</td>
+    <td>{{user.name}}</td>
 
-    <td>{{users.email}}</td>
+    <td>{{user.email}}</td>
 
-    <td>{{users.phonenumber}}</td>
+    <td>{{user.phonenumber}}</td>
 
-    <td>{{users.date1}}</td>
+    <td>{{user.date1}}</td>
 
-    <td>{{users.date2}}</td>
+    <td>{{user.date2}}</td>
 
-    <td><a class ="func" href="/details/{{users.ID}}">Details</a></td>
-    <td><a class ="func" href="/edit/{{users.ID}}">Edit</a></td>
-    <td><a class="func" href="/delete/{{users.ID}}">Delete</a></td>
+    <td><a class ="func" href="/details/{{user.ID}}">Details</a></td>
+    <td><a class ="func" href="/edit/{{user.ID}}">Edit</a></td>
+    <td><a class="func" href="/delete/{{user.ID}}">Delete</a></td>
     </tr>
     {% endfor %}
 </table>

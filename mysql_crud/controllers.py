@@ -27,12 +27,16 @@ def home_view():
         _name = request.form['username']
         _password = request.form['password']
         if _name==username and _password==password:
-            return redirect(f'/records/{randomString}')
+            return redirect(f'/records')
         else :
-                message = "invalid credentials"
+            message = "Invalid credentials"
     return render_template("admin_cont.html" , msg =message)
 
-
+@app.route('/records')
+def records():
+    mycursor.execute('SELECT * FROM user')
+    users = mycursor.fetchall()
+    return render_template("records.html", users=users)
 
 @app.route('/add', methods=['GET', 'POST'])
 def add_users():
@@ -83,7 +87,7 @@ def delete_users(id):
     sql = f'DELETE FROM user WHERE ID={id}'
     mycursor.execute(sql)
     mydb.commit()
-    return redirect('/')
+    return redirect('/records')
 
 
 if __name__ == '__main__':
